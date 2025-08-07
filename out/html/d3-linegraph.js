@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
+      parties = ['hadash', 'meretz', 'avoda', 'shinui', 'shas', 'utj', 'likud', 'mafdal', 'farright', 'other'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'kpd': '#700000', 'ddp': '#D3C24D', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3E88B3', 'nsdap': '#7A3C00', 'other': '#a0a0a0'};
+      partyColors = { 'hadash': '#700000', 'meretz': '#0dc96bff', 'avoda': '#ee1c25', 'shinui': '#2596be', 'shas': '#000', 'utj': '#0b296f', 'likud': '#205ca4', 'mafdal': '#66466b', 'farright': '#040484', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
+      partyNames = { 'hadash': 'Hadash', 'meretz': 'Meretz', 'avoda': 'Labour', 'shinui': 'Shinui', 'shas': 'Shas', 'utj': 'AY + DhT', 'likud': 'Likud', 'mafdal': 'Mafdal', 'farright': 'Far-Right Bloc', 'other': 'Others'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
